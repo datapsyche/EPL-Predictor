@@ -1,0 +1,7 @@
+Flask
+Jinja2
+gunicorn
+pandas
+requests
+numpy
+math
