@@ -255,22 +255,28 @@ def predictor(home_team, away_team):
 	P3 = 0
 
 	for i in range(0,8):
-	    for j in range(0,8):
-	        x = PT.iloc[i][j]
-	        if x>P1:
-	            P1 = x
-	            AG1 = i
-	            HG1 = j
-	        elif (x>P2):
-	            P2=x
-	            AG2 = i
-	            HG2 = j
-	        elif (x>P3):
-	            P3 = x
-	            AG3 = i
-	            HG3 = j
-	        else:
-	            continue
+		for j in range(0,8):
+			x = PT.iloc[i][j]
+			if x>P1:
+				P1 = x
+				AG1 = i
+				HG1 = j
+	
+	for i in range(0,8):
+		for j in range(0,8):
+			x = PT.iloc[i][j]
+			if (x!=P1) and (x>P2):
+				P2=x
+				AG2 = i
+				HG2 = j
+
+	for i in range(0,8):
+		for j in range(0,8):
+			x = PT.iloc[i][j]
+			if (x!=P1) and (x!=P2) and (x>P3):
+				P3 = x
+				AG3 = i
+				HG3 = j
 	            
 	P1 = round(P1*100,2)
 	P2 = round(P2*100,2)
