@@ -42,7 +42,7 @@
         <option data-tokens="West Ham">West Ham</option>
       </select>     
     </div>
-      <div class="col-sm-4 text-center"> 
+      <div class="col-sm-4 text-center text-white"> 
         <h5>vs</h5>
         <br><br>
         <button type="submit" class="btn btn-lg btn-warning">Predict</button>
@@ -86,8 +86,7 @@
       </div>
       <div class="card-body">
         <h1 class="card-title pricing-card-title"> {{ prediction['Home Team Winning Probability']}}% </h1>
-        <h3>Betting Odds</h3>
-        <h4>{{ prediction['Home Team Betting Odds'] }}</h4>
+        <h5>Betting Odds : <strong>{{ prediction['Home Team Betting Odds'] }}</strong></h5>
       </div>
     </div>
     <div class="card mb-4 shadow-sm">
@@ -96,8 +95,7 @@
       </div>
       <div class="card-body">
         <h1 class="card-title pricing-card-title"> {{ prediction['Draw Probability']}}% </h1>
-        <h3>Betting Odds</h3>
-        <h4>{{ prediction['Draw Betting Odds'] }}</h4>
+        <h5>Betting Odds : <strong>{{ prediction['Draw Betting Odds'] }}</strong></h5>
       </div>
     </div>
     <div class="card mb-4 shadow-sm">
@@ -106,8 +104,7 @@
       </div>
       <div class="card-body">
         <h1 class="card-title pricing-card-title"> {{ prediction['Away Team Winning Probability']}}% </h1>
-        <h3>Betting Odds</h3>
-        <h4>{{ prediction['Away Team Betting Odds'] }}</h4>
+        <h5>Betting Odds : <strong>{{ prediction['Away Team Betting Odds'] }}</strong></h5>
       </div>
     </div>
   </div>
@@ -120,7 +117,7 @@
       </div>
       <div class="card-body">
          <h1 class="card-title pricing-card-title"> {{ prediction['Predicted Score 1'][0] }} - {{ prediction['Predicted Score 1'][1] }} </h1>
-         <h3>{{ prediction['Predicted Score 1'][2] }}%</h3>        
+         <h4>Probability - <strong>{{ prediction['Predicted Score 1'][2] }}</strong>%</h4>        
       </div>
     </div>
     <div class="card mb-4 shadow-sm">
@@ -129,7 +126,7 @@
       </div>
       <div class="card-body">
         <h1 class="card-title pricing-card-title"> {{ prediction['Predicted Score 2'][0] }} - {{ prediction['Predicted Score 2'][1] }} </h1>
-        <h3>{{ prediction['Predicted Score 2'][2] }}%</h3>
+        <h4>Probability - <strong>{{ prediction['Predicted Score 2'][2] }}</strong>%</h4>
       </div>
     </div>
     <div class="card mb-4 shadow-sm">
@@ -138,7 +135,7 @@
       </div>
       <div class="card-body">
         <h1 class="card-title pricing-card-title"> {{ prediction['Predicted Score 3'][0] }} - {{ prediction['Predicted Score 3'][1] }} </h1>
-         <h3>{{ prediction['Predicted Score 3'][2] }}%</h3>
+         <h4>Probability - <strong>{{ prediction['Predicted Score 3'][2] }}</strong>%</h4>
       </div>
     </div>
   </div>
